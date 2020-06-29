@@ -1,5 +1,5 @@
 <h1 align="center" class='title'>
-  Biscoito da Sorte
+  Cronômetro
 </h1>
 
 <h4 align="center">
@@ -14,10 +14,10 @@
 
 <br>
 
-<p align="center"><a href="https://joel-irineu.github.io">Acesse a aplicação<a></p>
+<!-- <p align="center"><a href="https://joel-irineu.github.io">Acesse a aplicação<a></p> -->
 
 <p align="center">
-  <img alt="FrontEnd" src="https://user-images.githubusercontent.com/33061906/85928991-86ce8a80-b887-11ea-9abb-6244a05c4cdc.gif" width="350px">
+  <img alt="FrontEnd" src="https://user-images.githubusercontent.com/33061906/86014515-d1224980-b9f6-11ea-9b33-46c10142abe9.gif" width="300px">
 </p>
 
 ## :rocket: Tecnologias
@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Um app simples de sorteio cujo objetivo é apresentar um testo removido de um biscoito da sorte virtual, quebrando ele através de um botão apresentado na tela.
+Um app simples de cronômetro, para marcação de tempo, o app tem as opções de iniciar contagem, pausar e limpar contagem além de mortrar em tela o ultimo tempo que foi contado pelo app. 
 
 ## :memo: Licença
 
