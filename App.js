@@ -1,36 +1,21 @@
-import React, { useState } from 'react';
-import { StatusBar, View, Text, StyleSheet, Picker } from 'react-native';
-import { render } from 'react-dom';
+import React, { useState } from 'react'
+import { StatusBar, View, Text, StyleSheet, Slider } from 'react-native'
 
 export default function App(){
-  const [pizza, setPizza] = useState(0)
-  const pizzas = [
-    {kay: 0, nome: 'Frango', valor: 35.90},
-    {kay: 1, nome: 'Calabresa', valor: 20.90},
-    {kay: 2, nome: 'Brigadeiro', valor: 18.00},
-    {kay: 3, nome: 'Portuguesa', valor: 21.50}
-  ]
-
-  let pizzasItem = pizzas.map((item, key)=>{
-    return(
-      <Picker.Item key={key} value={key} label={item.nome} />
-    )
-  })
+  const [valor, setValor] = useState(0)
 
   return(
     <View style={styles.container}>
       <StatusBar/>
-      <Text style={styles.logo}>Menu Pizzas</Text>
-
-      <Picker
-        selectedValue={pizza}
-        onValueChange={(itemValue, itemIndex)=> setPizza(itemValue)}
-      >
-        {pizzasItem}
-      </Picker>
-
-      <Text style={styles.pizzas}>Você escolheu: {pizzas[pizza].nome}</Text>
-      <Text style={styles.pizzas}>R$: {pizzas[pizza].valor.toFixed(2)}</Text>
+      <Slider 
+        minimumValue={0}
+        maximumValue={100}
+        onValueChange={(valorSelecionado)=> setValor(valorSelecionado)}
+        value={valor}
+        minimumTrackTintColor='#6666ff'
+        maximumTrackTintColor='red'
+      />
+      <Text style={styles.valor}>{valor.toFixed(0 )}</Text>
 
     </View>
   )
@@ -39,17 +24,12 @@ export default function App(){
 const styles = StyleSheet.create({
   container:{
     flex: 1,
+    justifyContent: 'center',
   },
-  logo:{
-    marginTop: 20,
+  valor:{
     textAlign: 'center',
     fontSize: 20,
+    marginTop: 10,
     fontWeight: 'bold',
-  },
-  pizzas:{
-    marginTop: 15,
-    backgroundColor: '#ddd',
-    fontSize: 25,
-    textAlign: 'center',
-  },
+  }
 })
