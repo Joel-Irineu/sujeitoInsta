@@ -1,7 +1,7 @@
-const feed = [
+let feed = [
     {
       id: '1', 
-      nome: 'Lucas Silva', 
+      nome: 'LucasSilva', 
       descricao: 'Mais um dia de muitos bugs :)', 
       imgperfil: 'https://sujeitoprogramador.com/instareact/fotoPerfil1.png', 
       imgPublicacao: 'https://sujeitoprogramador.com/instareact/foto1.png',  
@@ -19,7 +19,7 @@ const feed = [
     },
     {
       id: '3', 
-      nome: 'Jose Augusto', 
+      nome: 'JoseAugusto', 
       descricao: 'Bora trabalhar Haha', 
       imgperfil: 'https://sujeitoprogramador.com/instareact/fotoPerfil3.png', 
       imgPublicacao: 'https://sujeitoprogramador.com/instareact/foto3.png',  
@@ -28,7 +28,7 @@ const feed = [
     },
     {
       id: '4', 
-      nome: 'Gustavo Henrique', 
+      nome: 'GustavoHenrique', 
       descricao: 'Isso sim que é TI!', 
       imgperfil: 'https://sujeitoprogramador.com/instareact/fotoPerfil1.png', 
       imgPublicacao: 'https://sujeitoprogramador.com/instareact/foto4.png', 
@@ -43,6 +43,24 @@ const feed = [
       imgPublicacao: 'https://sujeitoprogramador.com/instareact/foto5.png',
       likeada: false, 
       likers: 32
+    },
+    {
+      id: '6', 
+      nome: 'LucasSilva', 
+      descricao: 'Mais um dia de muitos bugs :)', 
+      imgperfil: 'https://sujeitoprogramador.com/instareact/fotoPerfil1.png', 
+      imgPublicacao: 'https://sujeitoprogramador.com/instareact/foto1.png',  
+      likeada: false, 
+      likers: 14
+     },
+     {
+      id: '7', 
+      nome: 'JoseAugusto', 
+      descricao: 'Bora trabalhar Haha', 
+      imgperfil: 'https://sujeitoprogramador.com/instareact/fotoPerfil3.png', 
+      imgPublicacao: 'https://sujeitoprogramador.com/instareact/foto3.png',  
+      likeada: false, 
+      likers: 3
     }
 ]
 export default feed
