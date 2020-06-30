@@ -31,6 +31,7 @@ export default function Main(){
         </View>
 
         <FlatList 
+            keyExtractor={(item) => item.id}
             showsVerticalScrollIndicator={false}
             data={data}
             renderItem={({item}) => ( <FeedItens data={item} />)}
